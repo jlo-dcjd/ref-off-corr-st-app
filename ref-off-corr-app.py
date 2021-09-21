@@ -24,7 +24,7 @@ st.title('Referral Offense Correlation')
 
 st.dataframe(general_2016)
 
-
+st.subheader('Select Referral Offenses')
 option = st.selectbox(
     'Offense 1', general_2016.columns)
 
