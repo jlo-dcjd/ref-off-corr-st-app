@@ -11,7 +11,7 @@ st.set_page_config(layout="wide")
 col_names = ['Pid', 'Sex', 'Race', 'Ref_Date', 'Paper_Date', 'Referral_Date', 'Stat', 'Category', 'Offense',
             'General_Category', 'OffenseDescription', 'Referral_Type']
 
-refs = pd.read_csv(r'Referrals 2010-2021 09-21-2021 17.06.csv', 
+refs = pd.read_csv('https://raw.githubusercontent.com/jlo-dcjd/ref-off-corr-st-app/main/Referrals%202010-2021%2009-21-2021%2017.06.csv', 
                   names=col_names, skiprows=1)
 
 refs['Referral_Date'] = pd.to_datetime(refs['Referral_Date'])
